@@ -24,6 +24,18 @@
         >
       </div>
       <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="summary">
+          Summary
+        </label>
+        <textarea
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="summary"
+          rows="3"
+          placeholder="Enter summary"
+          name="summary"
+        ></textarea>
+      </div>
+      <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
           Description
         </label>

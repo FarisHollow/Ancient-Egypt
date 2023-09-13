@@ -7,7 +7,7 @@ if (isset($_POST["submit"])) {
   $comment = $_POST['comment'];
   $pharaohId = $_POST['pharaoh_id'];
   
-  if ($comment == " " || $pharaohId == " ") {
+  if ($comment == "" || $pharaohId == "") {
         echo "Add a comment first";
   }
    else {
