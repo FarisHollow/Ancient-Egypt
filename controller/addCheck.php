@@ -13,7 +13,8 @@ if (isset($_POST["submit"])) {
   
   if ($_FILES["pic"]["error"] == 4 || $name == "" || $description == "" || $dob == "" || $dod == "" || $rule_time == "") {
     echo "Enter all the required information.";
-  } else {
+  }
+   else {
     $fileName = $_FILES["pic"]["name"];
     $fileSize = $_FILES["pic"]["size"];
     $tmpName = $_FILES["pic"]["tmp_name"];
@@ -26,7 +27,10 @@ if (isset($_POST["submit"])) {
       echo "Invalid Image Extension.";
     } else if ($fileSize > 1000000) {
       echo "Image Size Is Too Large.";
-    } else {
+    } else if(preg_match('/[#@!$&*]/', $name)){
+      echo "Name can not contain special characters";
+    } 
+    else{
       $newImageName = uniqid();
       $newImageName .= '.' . $imageExtension;
 
