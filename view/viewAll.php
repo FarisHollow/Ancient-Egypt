@@ -26,7 +26,7 @@ $result = mysqli_query($conn, "SELECT * FROM pharaohs ORDER BY id DESC");
 
 <div class="container mx-auto mt-1 p-1">
   <div class="container mx-auto mt-4 p-1 flex justify-start">
-    <a href="main.html" class="text-s text-blue-700 hover:underline">
+    <a href="main.php" class="text-s text-blue-700 hover:underline">
       Go to Main
     </a>
   </div>
